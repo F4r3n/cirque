@@ -26,7 +26,7 @@ jobs:
         run: |
           rustup toolchain install nightly --component miri
           rustup override set nightly
-          cargo miri setup
+          #cargo miri setup
       - name: Test with Miri
         run: cargo miri test
   cargo-deny:
